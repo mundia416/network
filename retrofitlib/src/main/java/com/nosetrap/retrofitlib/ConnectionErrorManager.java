@@ -19,10 +19,11 @@ public class ConnectionErrorManager {
      * this method is used in the onError method in retrofit2 callback
      */
     public void handleError(Throwable error) {
-        if (error instanceof ConnectException || error instanceof SocketTimeoutException ||
+        if (error instanceof ConnectException ||
+                error instanceof SocketTimeoutException ||
                 error instanceof UnknownHostException) {
             callback.onConnectionError();
-        }else {
+        } else {
             callback.onRandomError();
         }
         //todo handle all other exceptions that could possibly be thrown
