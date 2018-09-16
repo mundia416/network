@@ -7,7 +7,7 @@ import java.net.UnknownHostException
 /**
  * class that deals with the different types of connection errors
  */
-class ConnectionErrorManager(private val callback: ConnectionErrorCallback) {
+internal class ConnectionErrorManager(private val callback: ConnectionErrorCallback) {
 
     /**
      * process an Exception/throwable and execute the right callback methods
