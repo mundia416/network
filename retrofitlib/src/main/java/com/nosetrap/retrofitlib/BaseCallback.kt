@@ -11,10 +11,10 @@ package com.nosetrap.retrofitlib
         /**
          * should be called before a request executes
          */
-        fun onPreExecute()
+        fun onPreExecute(){}
 
         /**
          * should be called after a request executes
          */
-        fun onPostExecute()
+        fun onPostExecute(){}
     }
