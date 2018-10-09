@@ -31,7 +31,7 @@ android {
 configurations.all {
     resolutionStrategy {
         force 'com.android.support:support-media-compat:27.1.1'
-        force ' com.android.support:support-v4:27.1.1'
+        force 'com.android.support:support-v4:27.1.1'
     }
 }
 dependencies {
@@ -44,7 +44,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api 'com.google.firebase:firebase-database:16.0.2'
     api 'com.squareup.retrofit2:converter-gson:2.4.0'
-    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.4.0'
 
 
 
